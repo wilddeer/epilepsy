@@ -1,0 +1,29 @@
+<meta name="theme-color" content="#ffffff">
+
+<script>
+    let lastIndex = 0;
+    const colors = ['#ff0000', '#ffff00', '#00ff00', '#00ffff', '#0000ff', '#ff00ff'];
+    const tag = document.querySelector('meta[name="theme-color"]');
+    
+    setInterval(() => {
+        tag.setAttribute('content', colors[lastIndex]);
+        lastIndex += 1;
+        if (lastIndex === colors.length) lastIndex = 0;
+    }, 100);
+</script>
+
+<h1>Party hard</h1>
+
+<pre><code>    &lt;meta name="theme-color" content="#ffffff"&gt;
+
+    &lt;script&gt;
+        let lastIndex = 0;
+        const colors = ['#ff0000', '#ffff00', '#00ff00', '#00ffff', '#0000ff', '#ff00ff'];
+        const tag = document.querySelector('meta[name="theme-color"]');
+
+        setInterval(() =&gt; {
+            tag.setAttribute('content', colors[lastIndex]);
+            lastIndex += 1;
+            if (lastIndex === colors.length) lastIndex = 0;
+        }, 100);
+    &lt;/script&gt;</code><pre>
